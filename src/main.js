@@ -1,6 +1,6 @@
-import { hero } from './components/hero.js'
+import { create } from './utils/create.js'
+import { get } from './utils/get.js'
+import { set } from './utils/set.js'
+import { header } from './components/header.js'
 
-const header = document.createElement('header');
-header.append(hero());
-
-document.body.append(header)
+set(header(), document.body)

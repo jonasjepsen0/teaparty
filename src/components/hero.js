@@ -5,12 +5,12 @@ import { set } from '../utils/set.js'
 export function hero() {
     const heroimg = create('img');
     const herotext = create("h1")
-    const herodiv = create("div")
+    const herofig = create("figure")
 
     heroimg.src = "../images/Image-Hero-Front.jpg";
     herotext.textContent = "helloworld"
 
-    herodiv.append(heroimg, herotext);
+    herofig.append(heroimg, herotext);
 
-    return herodiv;
+    return herofig;
 }
