@@ -1,6 +1,7 @@
 import { create } from '../utils/create.js'
 import { get } from '../utils/get.js'
 import { set } from '../utils/set.js'
+import { burger } from './burger.js'
 
 export function navbar() {
     const nav = create("nav")
@@ -10,8 +11,13 @@ export function navbar() {
     const linkEl = create('a')
     linkEl.href = `#${link}`
     linkEl.innerText = link.toUpperCase()
-    linkEl.classList = 'text-blue-200'
+    linkEl.classList = 'text-blue-200 hidden md:inline'
     set(linkEl, nav)
   })
+
+const { btn, menu } = burger(navlinks)
+set(btn, nav)
+set(menu, nav)
+
   return nav
 }
