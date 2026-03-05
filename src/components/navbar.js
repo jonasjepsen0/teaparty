@@ -5,6 +5,8 @@ import { burger } from './burger.js'
 
 export function navbar() {
     const nav = create("nav")
+    nav.className = 'flex justify-end p-4'
+    
     const navlinks = ['about us', 'brands', 'how to', 'join us']
     
     navlinks.forEach((link) => {
