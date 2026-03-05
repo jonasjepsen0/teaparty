@@ -4,22 +4,21 @@ import { set } from '../utils/set.js'
 import { burger } from './burger.js'
 
 export function navbar() {
-    const nav = create("nav")
-    nav.className = 'flex justify-end p-4'
-    
-    const navlinks = ['about us', 'brands', 'how to', 'join us']
-    
-    navlinks.forEach((link) => {
+  const nav = create('nav')
+  nav.className = 'flex justify-end px-1 py-0 bg-custompurple'
+
+  const navlinks = ['about us', 'brands', 'how to', 'join us']
+
+  navlinks.forEach((link) => {
     const linkEl = create('a')
     linkEl.href = `#${link}`
     linkEl.innerText = link.toUpperCase()
-    linkEl.classList = 'text-blue-200 hidden md:inline'
+    linkEl.className = 'text-blue-200 hidden md:inline'
     set(linkEl, nav)
   })
 
-const { btn, menu } = burger(navlinks)
-set(btn, nav)
-set(menu, nav)
+  const { wrapper } = burger(navlinks)
+  set(wrapper, nav)
 
   return nav
 }

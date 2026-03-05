@@ -8,8 +8,10 @@ export function hero() {
     const herofig = create("figure")
 
     heroimg.src = "../images/Image-Hero-Front.jpg";
-    herotext.textContent = "helloworld"
+    herotext.textContent = "TeaParty"
 
+    herotext.className = "font-customstylefont text-7xl absolute top-1.5 left-17 text-customwhite"
+    
     herofig.append(heroimg, herotext);
 
     return herofig;

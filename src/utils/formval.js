@@ -7,40 +7,36 @@ document.getElementById('sendbtn').addEventListener('click', function(event) {
     const password = document.getElementById('password');
     const rptpassword = document.getElementById('rptpassword');
 
-    const fornavnvalue = document.getElementById('fornavn').value.trim();
-    const efternavnvalue = document.getElementById('efternavn').value.trim();
-    const emailvalue = document.getElementById('email').value.trim();
-    const passwordvalue = document.getElementById('password').value.trim();
-    const rptpasswordvalue = document.getElementById('rptpassword').value.trim();
+    const fornavnvalue = fornavn.value.trim();
+    const efternavnvalue = efternavn.value.trim();
+    const emailvalue = email.value.trim();
+    const passwordvalue = password.value.trim();
+    const rptpasswordvalue = rptpassword.value.trim();
 
-        if(!fornavnvalue) fornavn.classList.add('formerror');
-        else fornavn.classList.remove('formerror');
-        if(!efternavnvalue) efternavn.classList.add('formerror');
-        else efternavn.classList.remove('formerror');
-        if(!emailvalue) email.classList.add('formerror');
-        else email.classList.remove('formerror');
-        if(!passwordvalue) password.classList.add('formerror');
-        else password.classList.remove('formerror');
-        if(!rptpasswordvalue) rptpassword.classList.add('formerror');
-        else rptpassword.classList.remove('formerror'); 
+    const setError = (el, hasError) => el.classList.toggle('formerror', hasError);
 
-        if (!fornavnvalue || !efternavnvalue || !emailvalue || !passwordvalue || !rptpasswordvalue) {
-            return;
-        }
+    setError(fornavn, !fornavnvalue);
+    setError(efternavn, !efternavnvalue);
+    setError(email, !emailvalue);
+    setError(password, !passwordvalue);
+    setError(rptpassword, !rptpasswordvalue);
 
-        if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailvalue)) {
-            if (passwordvalue !== rptpasswordvalue) { 
-                alert('passwords do not match');
-                password.classList.add('formerror');
-                rptpassword.classList.add('formerror');
-            }
-            else {
-                alert('sendt');
-                password.classList.remove('formerror');
-                rptpassword.classList.remove('formerror'); 
-            }
-            } 
-        else {
-            email.classList.add('formerror');
-        }
+    if (!fornavnvalue || !efternavnvalue || !emailvalue || !passwordvalue || !rptpasswordvalue) return;
+
+    const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailvalue);
+
+    if (!validEmail) {
+        setError(email, true);
+        return;
+    }
+
+    if (passwordvalue !== rptpasswordvalue) {
+        alert('passwords do not match');
+        setError(password, true);
+        setError(rptpassword, true);
+    } else {
+        alert('sendt');
+        setError(password, false);
+        setError(rptpassword, false);
+    }
 });
