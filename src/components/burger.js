@@ -8,7 +8,7 @@ export function burger(navlinks) {
 
   const btn = create('button')
   btn.innerText = '☰'
-  btn.className = 'text-blue-200 text-2xl'
+  btn.className = 'text-lime-300 text-2xl'
 
   const menu = create('div')
   menu.className = 'flex-col gap-2 p-4 hidden w-full items-center'
@@ -17,7 +17,7 @@ export function burger(navlinks) {
     const linkEl = create('a')
     linkEl.href = `#${link}`
     linkEl.innerText = link.toUpperCase()
-    linkEl.className = 'text-blue-200 block text-center'
+    linkEl.className = 'text-lime-300 block text-center'
     set(linkEl, menu)
   })
 

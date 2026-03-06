@@ -13,7 +13,7 @@ export function navbar() {
     const linkEl = create('a')
     linkEl.href = `#${link}`
     linkEl.innerText = link.toUpperCase()
-    linkEl.className = 'text-blue-200 hidden md:inline'
+    linkEl.className = 'hidden md:inline'
     set(linkEl, nav)
   })
 
