@@ -26,10 +26,5 @@ document.getElementById('sendbtn').addEventListener('click', function(event) {
         return;
     }
 
-    if (!mailcheck.checked && !callcheck.checked) {
-        alert('please select at least one contact method');
-        return;
-    }
-
     alert('sent');
 });
