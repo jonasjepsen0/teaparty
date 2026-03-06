@@ -7,7 +7,7 @@ import img3 from "../../images/Brands-White.jpg"
 import img4 from "../../images/Brands-Rooibos.jpg"
 import img5 from "../../images/Brands-Herbal.jpg"
 import img6 from "../../images/Brands-Organic.jpg"
-import img7 from "../../images/Brands-Green.jpg"
+import img7 from "../../images/About-us-1.jpg"
 
 export function sect4h2() {
     const h2 = create("h2")
@@ -30,7 +30,7 @@ export function sect4() {
     const header = create("div")
     const content = create("div")
 
-    section.className = ""
+    section.style.backgroundImage = `url("${img7}")`
     header.className = "h-28"
     content.className = "bg-orange-300"
 
@@ -60,10 +60,10 @@ export function sect4() {
     const p3 = create("p")
 
     img.className = "w-full my-4"
-    itemh3.className = "text-custompurple text-5xl font-customGoogleFont"
-    p1.className = "text-custompurple font-customGoogleFont"
-    p2.className = "font-customGoogleFont text-customwhite"
-    p3.className = "font-customGoogleFont text-customwhite"
+    itemh3.className = "text-custompurple text-5xl font-customGoogleFont mx-1"
+    p1.className = "text-custompurple font-customGoogleFont mx-1"
+    p2.className = "font-customGoogleFont text-customwhite mx-1 py-3"
+    p3.className = "font-customGoogleFont text-customwhite mx-1 py-3"
 
     const update = (i) => {
         img.src = items[i].img
@@ -76,7 +76,7 @@ export function sect4() {
     select.addEventListener("change", (e) => update(e.target.value))
     update(0)
 
-    set(h3, header)
+set(h3, header)
 set(h4, header)
 set(select, header)
 set(img, content)
