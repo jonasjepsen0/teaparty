@@ -2,6 +2,12 @@ import { create } from '../utils/create.js'
 import { get } from '../utils/get.js'
 import { set } from '../utils/set.js'
 import img1 from "../../images/Brands-Green.jpg"
+import img2 from "../../images/Brands-Black.jpg"
+import img3 from "../../images/Brands-White.jpg"
+import img4 from "../../images/Brands-Rooibos.jpg"
+import img5 from "../../images/Brands-Herbal.jpg"
+import img6 from "../../images/Brands-Organic.jpg"
+import img7 from "../../images/Brands-Green.jpg"
 
 export function sect4h2() {
     const h2 = create("h2")
@@ -12,11 +18,11 @@ export function sect4h2() {
 
 const items = [
     { img: img1, h3: 'Green Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
-    { img: '../../images/Brands-Black.jpg', h3: 'Black Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
-    { img: '../../images/Brands-White.jpg', h3: 'White Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
-    { img: '../../images/Brands-Rooibos.jpg', h3: 'Rooibos Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
-    { img: '../../images/Brands-Herbal.jpg', h3: 'Herbal Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
-    { img: '../../images/Brands-Organic.jpg', h3: 'Organic Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
+    { img: img2, h3: 'Black Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
+    { img: img3, h3: 'White Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
+    { img: img4, h3: 'Rooibos Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
+    { img: img5, h3: 'Herbal Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
+    { img: img6, h3: 'Organic Tea', p1: 'Choose your brand and learn how to prepare. Fresh and vegetal, green teas are plucked, withered and rolled. Heat is applied to stop oxidation.', p2: 'Water Temperature: 80C / 180°F', p3: 'Brewing Time: 2 - 3 min.' },
 ]
 
 export function sect4() {

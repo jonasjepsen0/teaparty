@@ -1,6 +1,12 @@
 import { create } from '../utils/create.js'
 import { get } from '../utils/get.js'
 import { set } from '../utils/set.js'
+import img1 from "../../images/Brands-Green.jpg"
+import img2 from "../../images/Brands-Black.jpg"
+import img3 from "../../images/Brands-White.jpg"
+import img4 from "../../images/Brands-Rooibos.jpg"
+import img5 from "../../images/Brands-Herbal.jpg"
+import img6 from "../../images/Brands-Organic.jpg"
 
 export function sect3h2() {
     const h2 = create("h2")
@@ -14,12 +20,12 @@ export function imggrid3() {
     grid.className = "grid grid-cols-2 gap-2 w-full"
 
     const images = [
-        "../../images/Brands-Green.jpg",
-        "../../images/Brands-Black.jpg",
-        "../../images/Brands-White.jpg",
-        "../../images/Brands-Rooibos.jpg",
-        "../../images/Brands-Herbal.jpg",
-        "../../images/Brands-Organic.jpg",
+        img1,
+        img2,
+        img3,
+        img4,
+        img5,
+        img6,
     ]
 
     images.forEach((img) => {

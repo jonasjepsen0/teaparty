@@ -1,6 +1,7 @@
 import { create } from '../utils/create.js'
 import { get } from '../utils/get.js'
 import { set } from '../utils/set.js'
+import img1 from "../../images/Form-Base.jpg"
 
 export function sect2h2() {
     const h2 = create("h2")
@@ -28,7 +29,7 @@ export function imggrid() {
         const h3 = create("h3")
 
         a.href = "#"
-        piece.style.backgroundImage = `url("../../images/Form-Base.jpg")`
+        piece.style.backgroundImage = img1
         piece.style.backgroundSize = "200% 200%"
         piece.style.backgroundPositionX = x
         piece.style.backgroundPositionY = y
