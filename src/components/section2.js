@@ -29,7 +29,7 @@ export function imggrid() {
         const h3 = create("h3")
 
         a.href = "#"
-        piece.style.backgroundImage = img1
+        piece.style.backgroundImage = `url("${img1}")`
         piece.style.backgroundSize = "200% 200%"
         piece.style.backgroundPositionX = x
         piece.style.backgroundPositionY = y

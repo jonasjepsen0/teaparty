@@ -1,7 +1,7 @@
 import { create } from '../utils/create.js'
 import { get } from '../utils/get.js'
 import { set } from '../utils/set.js'
-import img1 from "../images/kop.png"
+import img1 from "../../images/kop.png"
 
 export function sect1() {
     const section = create('section')

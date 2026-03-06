@@ -1,7 +1,7 @@
 import { create } from '../utils/create.js'
 import { get } from '../utils/get.js'
 import { set } from '../utils/set.js'
-import img1 from "../images/Image-Hero-Front.jpg"
+import img1 from "../../images/Image-Hero-Front.jpg"
 
 export function hero() {
     const heroimg = create('img');
