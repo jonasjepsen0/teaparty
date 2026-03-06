@@ -32,7 +32,7 @@ export function sect4() {
 
     section.style.backgroundImage = `url("${img7}")`
     header.className = "h-28"
-    content.className = "bg-orange-300"
+    content.className = "bg-orange-200"
 
     const h3 = create("h3")
     h3.textContent = "Make a nice cup of tea"

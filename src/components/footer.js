@@ -13,18 +13,18 @@ export function footer() {
 
     const address = create("p")
     address.textContent = "Styrsögatan 4, 211 24 Malmö, Sweden"
-    address.className = "font-customGoogleFont"
+    address.className = "font-customGoogleFont text-customwhite"
 
     const number = create("p")
     number.textContent = "+46 (0) 761688994"
-    number.className = "font-customGoogleFont"
+    number.className = "font-customGoogleFont text-customwhite"
 
     const email = create("p")
     email.textContent = "sales@teministeriet.com"
-    email.className = "font-customGoogleFont"
+    email.className = "font-customGoogleFont text-customwhite"
 
     const linkcol = create("div")
-    linkcol.className = "flex flex-col gap-4"
+    linkcol.className = "flex flex-col my-4 text-customwhite"
 
     const navlinks = ['Information', 'About Us', 'Our Blog', 'Terms & Conditions', 'Privacy Policy', 'Contact Us']
     navlinks.forEach((link) => {
